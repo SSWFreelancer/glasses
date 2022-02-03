@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Glasses</title>
+   <link rel="stylesheet" href="source/css/style.css">
+</head>
+
+<body>
+   <div class="wrapper">
+      <div id="fixed" class="popup-fixed">
+      </div>
+      <header class="header">
+         <div class="header__container container">
+            <div class="characters">
+               <div class="choose language">
+                  <span class="name">Language: </span>
+                  <select class="choose__list language__list" name="language">
+                     <option selected value="English">English</option>
+                  </select>
+
+               </div>
+               <div class="currency">
+                  <span class="name">Currency: </span>
+                  <select class="choose__list currency__list" name="language">
+                     <option selected value="English">USD</option>
+                     <option value="Russian">RUB</option>
+                     <option value="Italian">EURO</option>
+                  </select>
+               </div>
+            </div>
+            <div class="header__burger">
+               <span></span>
+            </div>
+            <nav class="menu">
+               <ul class="menu__list">
+                  <li><a href="#popup" class="menu__link popup-link">Account</a></li>
+                  <li><a href="#wishlist" class="menu__link">Wishlist</a></li>
+                  <li><a href="#checkout" class="menu__link">Checkout</a></li>
+                  <li><a href="#popup" class="menu__link popup-link">Log In</a></li>
+                  <li><a href="#signup" class="menu__link last">Sign Up</a></li>
+               </ul>
+            </nav>
+         </div>
+      </header>
+
+      <div class="sub-header">
+         <div class="sub-header__container container">
+            <h1 class="container__title">LEO SHOP</h1>
+            <nav class="container__menu">
+               <ul class="container__list">
+                  <li><a href="" class="container__link ">HOME</a></li>
+                  <li><a href="" class="container__link ">WOMEN</a></li>
+                  <li><a href="" class="container__link ">MEN</a></li>
+                  <li><a href="" class="container__link">OTHER</a></li>
+                  <li><a href="" class="container__link lastlink">PURCHASE</a></li>
+               </ul>
+            </nav>
+            <div class="search">
+               <div class="container__search">
+                  <input placeholder="Search..." type="text" onfocus="this.placeholder = ''"
+                     onblur="this.placeholder = 'Search...'">
+                  <a href="#"> <img src="img/header/search.png" alt=""></a>
+               </div>
+               <div class="container__items">
+                  <div class="items-logo">
+                     <a href="#"><img src="img/header/ellipse1.png" alt=""></a>
+                  </div>
+                  <div class="items-logo">
+                     <a href="#"><img src="img/header/ellipse2.png" alt=""></a>
+                  </div>
+
+                  <p>CART (<span>0</span>)</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="slider">
+         <div class="slider__body">
+            <div class="slider__item">
+               <h2>ALUMINUM CLUB</h2>
+               <h2>EXPERIENCE RAY-BAN</h2>
+            </div>
+            <div class="slider__item">
+               <h2>ALUMINUM CLUB Z</h2>
+               <h2>EXPERIENCE RAY-BAN EXPERIENCE</h2>
+            </div>
+            <div class="slider__item">
+               <h2>ALUMINUM CLUB ALUMINUM CLUB ALUMINUM CLUB ALUMINUM CLUB</h2>
+               <h2>EXPERIENCE EXPERIENCE EXPERIENCE RAY-BAN</h2>
+            </div>
+            <div class="slider__item">
+               <h2>ALUMINUM CLUB ALUMINUM CLUB</h2>
+               <h2>EXPERIENCE RAY-BAN</h2>
+            </div>
+         </div>
+      </div>
+
+
+      <div id="wishlist" class="featured">
+         <div class="featured__body">
+            <div class="featured__body-item">
+               <div class="body__products">
+                  <div class="products-title">FEATURED PRODUCTS</div>
+                  <div class="products-item">
+                     <div class="item-mod new">
+                        <a href="#"><img src="img/featured/1.jpg" alt=""></a>
+                        <div class="mod-chrctrs">
+                           <div class="chrctrs-nameprice">
+                              <a href="#" class="nameprice-title">
+                                 Lorem Ipsum is simply.
+                              </a>
+                              <a href="#" class="nameprice-price">
+                                 $388.00
+                              </a>
+                           </div>
+                           <div class="container__items featured-items">
+                              <div class="items-logo featured-logo">
+                                 <a href="#"><img src="img/featured/layer_5_copy_7_247.png" alt=""></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="item-mod">
+                        <a href="#"><img src="img/featured/2.png" alt=""></a>
+                        <div class="mod-chrctrs">
+                           <div class="chrctrs-nameprice">
+                              <a href="#" class="nameprice-title">
+                                 Lorem Ipsum is simply.
+                              </a>
+                              <a href="#" class="nameprice-price">
+                                 $388.00
+                              </a>
+                           </div>
+                           <div class="container__items featured-items">
+                              <div class="items-logo featured-logo">
+                                 <a href="#"><img src="img/featured/layer_5_copy_7_247.png" alt=""></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="item-mod sale">
+                        <a href="#"><img src="img/featured/3.png" alt=""></a>
+                        <div class="mod-chrctrs">
+                           <div class="chrctrs-nameprice">
+                              <a href="#" class="nameprice-title">
+                                 Lorem Ipsum is simply.
+                              </a>
+                              <a href="#" class="nameprice-price">
+                                 $388.00
+                              </a>
+                           </div>
+                           <div class="container__items featured-items">
+                              <div class="items-logo featured-logo">
+                                 <a href="#"><img src="img/featured/layer_5_copy_7_247.png" alt=""></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="item-mod">
+                        <a href="#"><img src="img/featured/1.jpg" alt=""></a>
+                        <div class="mod-chrctrs">
+                           <div class="chrctrs-nameprice">
+                              <a href="#" class="nameprice-title">
+                                 Lorem Ipsum is simply.
+                              </a>
+                              <a href="#" class="nameprice-price">
+                                 $388.00
+                              </a>
+                           </div>
+                           <div class="container__items featured-items">
+                              <div class="items-logo featured-logo">
+                                 <a href="#"><img src="img/featured/layer_5_copy_7_247.png" alt=""></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="item-mod new">
+                        <a href="#"><img src="img/featured/2.png" alt=""></a>
+                        <div class="mod-chrctrs">
+                           <div class="chrctrs-nameprice">
+                              <a href="#" class="nameprice-title">
+                                 Lorem Ipsum is simply.
+                              </a>
+                              <a href="#" class="nameprice-price">
+                                 $388.00
+                              </a>
+                           </div>
+                           <div class="container__items featured-items">
+                              <div class="items-logo featured-logo">
+                                 <a href="#"><img src="img/featured/layer_5_copy_7_247.png" alt=""></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="item-mod">
+                        <a href="#"><img src="img/featured/3.png" alt=""></a>
+                        <div class="mod-chrctrs">
+                           <div class="chrctrs-nameprice">
+                              <a href="#" class="nameprice-title">
+                                 Lorem Ipsum is simply.
+                              </a>
+                              <a href="#" class="nameprice-price">
+                                 $388.00
+                              </a>
+                           </div>
+                           <div class="container__items featured-items">
+                              <div class="items-logo featured-logo">
+                                 <a href="#"><img src="img/featured/layer_5_copy_7_247.png" alt=""></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="item-mod new">
+                        <a href="#"><img src="img/featured/1.jpg" alt=""></a>
+                        <div class="mod-chrctrs">
+                           <div class="chrctrs-nameprice">
+                              <a href="#" class="nameprice-title">
+                                 Lorem Ipsum is simply.
+                              </a>
+                              <a href="#" class="nameprice-price">
+                                 $388.00
+                              </a>
+                           </div>
+                           <div class="container__items featured-items">
+                              <div class="items-logo featured-logo">
+                                 <a href="#"><img src="img/featured/layer_5_copy_7_247.png" alt=""></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="item-mod sale">
+                        <a href="#"><img src="img/featured/2.png" alt=""></a>
+                        <div class="mod-chrctrs">
+                           <div class="chrctrs-nameprice">
+                              <a href="#" class="nameprice-title">
+                                 Lorem Ipsum is simply.
+                              </a>
+                              <a href="#" class="nameprice-price">
+                                 $388.00
+                              </a>
+                           </div>
+                           <div class="container__items featured-items">
+                              <div class="items-logo featured-logo">
+                                 <a href="#"><img src="img/featured/layer_5_copy_7_247.png" alt=""></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="item-mod new">
+                        <a href="#"><img src="img/featured/3.png" alt=""></a>
+                        <div class="mod-chrctrs">
+                           <div class="chrctrs-nameprice">
+                              <a href="#" class="nameprice-title">
+                                 Lorem Ipsum is simply.
+                              </a>
+                              <a href="#" class="nameprice-price">
+                                 $388.00
+                              </a>
+                           </div>
+                           <div class="container__items featured-items">
+                              <div class="items-logo featured-logo">
+                                 <a href="#"><img src="img/featured/layer_5_copy_7_247.png" alt=""></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="body__staff">
+                  <div class="products-title">STAFF PICK</div>
+                  <div class="products-item">
+                     <div class="item-mod">
+                        <a href="#"><img src="img/featured/1.jpg" alt=""></a>
+                        <div class="mod-chrctrs">
+                           <div class="chrctrs-nameprice">
+                              <a href="#" class="nameprice-title">
+                                 Lorem Ipsum is simply.
+                              </a>
+                              <a href="#" class="nameprice-price">
+                                 $388.00
+                              </a>
+                           </div>
+                           <div class="container__items featured-items">
+                              <div class="items-logo featured-logo">
+                                 <a href="#"><img src="img/featured/layer_5_copy_7_247.png" alt=""></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="item-mod sale">
+                        <a href="#"><img src="img/featured/2.png" alt=""></a>
+                        <div class="mod-chrctrs">
+                           <div class="chrctrs-nameprice">
+                              <a href="#" class="nameprice-title">
+                                 Lorem Ipsum is simply.
+                              </a>
+                              <a href="#" class="nameprice-price">
+                                 $388.00
+                              </a>
+                           </div>
+                           <div class="container__items featured-items">
+                              <div class="items-logo featured-logo">
+                                 <a href="#"><img src="img/featured/layer_5_copy_7_247.png" alt=""></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="item-mod">
+                        <a href="#"><img src="img/featured/3.png" alt=""></a>
+                        <div class="mod-chrctrs">
+                           <div class="chrctrs-nameprice">
+                              <a href="#" class="nameprice-title">
+                                 Lorem Ipsum is simply.
+                              </a>
+                              <a href="#" class="nameprice-price">
+                                 $388.00
+                              </a>
+                           </div>
+                           <div class="container__items featured-items">
+                              <div class="items-logo featured-logo">
+                                 <a href="#"><img src="img/featured/layer_5_copy_7_247.png" alt=""></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="body__new">
+                  <div class="products-title">NEW PRODUCTS</div>
+                  <div class="products-item">
+                     <div class="item-mod new">
+                        <a href="#"><img src="img/featured/1.jpg" alt=""></a>
+                        <div class="mod-chrctrs">
+                           <div class="chrctrs-nameprice">
+                              <a href="#" class="nameprice-title">
+                                 Lorem Ipsum is simply.
+                              </a>
+                              <a href="#" class="nameprice-price">
+                                 $388.00
+                              </a>
+                           </div>
+                           <div class="container__items featured-items">
+                              <div class="items-logo featured-logo">
+                                 <a href="#"><img src="img/featured/layer_5_copy_7_247.png" alt=""></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="item-mod new">
+                        <a href="#"><img src="img/featured/2.png" alt=""></a>
+                        <div class="mod-chrctrs">
+                           <div class="chrctrs-nameprice">
+                              <a href="#" class="nameprice-title">
+                                 Lorem Ipsum is simply.
+                              </a>
+                              <a href="#" class="nameprice-price">
+                                 $388.00
+                              </a>
+                           </div>
+                           <div class="container__items featured-items">
+                              <div class="items-logo featured-logo">
+                                 <a href="#"><img src="img/featured/layer_5_copy_7_247.png" alt=""></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="item-mod new">
+                        <a href="#"><img src="img/featured/3.png" alt=""></a>
+                        <div class="mod-chrctrs">
+                           <div class="chrctrs-nameprice">
+                              <a href="#" class="nameprice-title">
+                                 Lorem Ipsum is simply.
+                              </a>
+                              <a href="#" class="nameprice-price">
+                                 $388.00
+                              </a>
+                           </div>
+                           <div class="container__items featured-items">
+                              <div class="items-logo featured-logo">
+                                 <a href="#"><img src="img/featured/layer_5_copy_7_247.png" alt=""></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="featured__glass">
+               <div id="checkout" class="glass-slider">
+                  <div class="glass-item">
+                     <img src="img/featured/slider.png" alt="">
+                     <a href="" class="item-link">Check it Out</a>
+                  </div>
+                  <div class="glass-item">
+                     <a href="" class="item-link">Check it Out</a>
+                     <img src="img/featured/slider.png" alt="">
+                  </div>
+                  <div class="glass-item">
+                     <a href="" class="item-link">Check it Out</a>
+                     <img src="img/featured/slider.png" alt="">
+                  </div>
+               </div>
+               <div id="signup" class="glass-signup">
+                  <div class="signup-title">
+                     NEWSLETTERS SIGNUP
+                  </div>
+                  <div class="signup-text">
+                     Lorem ipsum dolor sit amen, dolor imun ra adlip ulissys
+                  </div>
+                  <input class="signup-input" type="text">
+                  <a href="" class="item-link signup-link">Subscribe</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="prefooter">
+         <div class="prefooter__firstcolumn">
+            <div class="bg">
+               <a href="#"><img src="img/prefooter/1.png" alt=""></a>
+            </div>
+            <a href="#"><span>Free shipping on orders over $100</span></a>
+         </div>
+         <div class="prefooter__secondcolumn">
+            <div class="bg">
+               <a href="#"><img src="img/prefooter/2.png" alt=""></a>
+            </div>
+            <a href="#"><span>call us! toLl free- 409-8888-0099</span></a>
+         </div>
+      </div>
+
+      <footer class="footer">
+         <div class="footer__body">
+            <div class="footer__firstrow">
+               <div class="footer__firstrow-facebook">
+                  <div class="title">FACEBOOK</div>
+                  <div class="firstrow-subtitle">
+                     <p>20000 Members</p>
+                     <a href="#"><img src="img/footer/like.png" alt=""></a>
+                  </div>
+                  <div class="firstrow-gallery">
+                     <a href="#"><img src="img/footer/1.png" alt=""></a>
+                     <a href="#"><img src="img/footer/2.png" alt=""></a>
+                     <a href="#"><img src="img/footer/3.png" alt=""></a>
+                     <a href="#"><img src="img/footer/4.png" alt=""></a>
+                     <a href="#"><img src="img/footer/5.png" alt=""></a>
+                     <a href="#"><img src="img/footer/6.png" alt=""></a>
+                     <a href="#"><img src="img/footer/7.png" alt=""></a>
+                     <a href="#"><img src="img/footer/8.png" alt=""></a>
+                  </div>
+                  <div class="firstrow-footer">
+                     facebook Social plugin
+                  </div>
+               </div>
+               <div class="footer__firstrow-twitter">
+                  <div class="title">FROM TWITTER</div>
+                  <ul>
+                     <li>
+                        <img src="img/footer/twt.png" alt="">
+                        Lorem Ipsum is simply dummy text of the printing and <a href="#">typesetting industry. Lorem
+                           Ipsum</a> has been the industry's standard dummy text ever since the
+                     </li>
+                     <li>
+                        <img src="img/footer/twt.png" alt="">
+                        Lorem Ipsum is simply dummy text of the printing and <a href="#">typesetting industry. Lorem
+                           Ipsum</a> has been the industry's standard dummy text ever since the
+                     </li>
+                  </ul>
+               </div>
+               <div class="footer__firstrow-information">
+                  <div class="title">INFORMATION</div>
+                  <ul>
+                     <li>Sed ultrices purus non. </li>
+                     <li>sodales sodales.</li>
+                     <li> Curabitur pretium dui vitae.</li>
+                     <li>Donec gravida mi in nisl</li>
+                     <li>faucibus leo condimentum.</li>
+                     <li>Donec et lorem suscipit.</li>
+                  </ul>
+               </div>
+               <div class="footer__firstrow-contact">
+                  <div class="title">CONTACT US</div>
+                  <div class="contact-text">
+                     Leo Store <br>Leopards media <br>KVM Rpad, 4590GH <br>+1 489-8888-0099 <br>mail@email.com;
+                  </div>
+                  <div class="contact-footer">
+                     <div class="fbg">
+                        <a href="#"><img src="img/footer/g+.png" alt=""></a>
+                     </div>
+                     <div class="fbg">
+                        <a href="#"><img src="img/footer/in.png" alt=""></a>
+                     </div>
+                     <div class="fbg">
+                        <a href="#"><img src="img/footer/wf.png" alt=""></a>
+                     </div>
+                     <div class="fbg">
+                        <a href="#"><img src="img/footer/fcb.png" alt=""></a>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <div class="footer__secondrow">
+         <div class="footer__body">
+            <div class="footer__secondrow-firstcolumn">
+               © Copyright 2013 Css Author, All Rights Reserved.
+            </div>
+            <div class="footer__secondrow-secondcolumn">
+               <nav class="footer-menu">
+                  <ul class="footer-menu__list">
+                     <li><a href="" class="footer-menu__link">About Us</a></li>
+                     <li><a href="" class="footer-menu__link">Delivery & Returns</a></li>
+                     <li><a href="" class="footer-menu__link">Terms & Conditions</a></li>
+                     <li><a href="" class="footer-menu__link last">Contact Us</a></li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+      </div>
+      <div id="popup" class="popup">
+         <div class="popup__body">
+            <form action="#" class="popup__content">
+               <a href="#fixed" class="popup__close close-popup">X</a>
+               <input class="Logininpt" placeholder="Login" type="text" onfocus="this.placeholder = ''"
+                  onblur="this.placeholder = 'Login...'">
+               <input class="Logininpt" placeholder="Password" type="password" onfocus="this.placeholder = ''"
+                  onblur="this.placeholder = 'Password...'">
+               <button class="Loginbtn" type="submit">Login</button>
+            </form>
+         </div>
+      </div>
+   </div>
+
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="js/popup.js"></script>
+   <script src="js/slick.min.js"></script>
+   <script src="js/script.js"></script>
+
+</body>
+
+</html>
