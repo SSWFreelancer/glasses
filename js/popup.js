@@ -1,5 +1,6 @@
 const popupLinks = document.querySelectorAll('.popup-link');
 const body = document.querySelector('body');
+const html = document.querySelector('html');
 const lockPadding = document.querySelectorAll(".lock-padding");
 const burger = document.querySelector('.header__burger');
 const menu = document.querySelector('.menu');
@@ -69,8 +70,9 @@ function bodyLock(){
         el.style.paddingRight = lockPaddingValue;
       }
    }
-   body.style.paddingRight = lockPaddingValue;
+   //body.style.paddingRight = lockPaddingValue;
    body.classList.add('lock');
+   html.classList.add('lock');
    unlock = false;
    setTimeout(function(){
       unlock = true;
@@ -87,6 +89,7 @@ function bodyUnLock(){
       }
       body.style.paddingRight = '0px';
       body.classList.remove('lock');
+      html.classList.remove('lock');
    }, timeout);
  
    unlock = false;
