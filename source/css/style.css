@@ -241,13 +241,10 @@ html{
 .header__burger {
   display: none;
 }
-
-@media (max-width: 767.98px) {
   body.lock, html.lock {
     overflow: hidden;
-
   }
-
+@media (max-width: 767.98px) {
   .header__burger {
     position: relative;
     display: -ms-grid;
