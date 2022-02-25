@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
    $('.header__burger').click(function (event) {
       $('.header__burger, .menu').toggleClass('active');
@@ -97,3 +96,94 @@ $(document).ready(function () {
 
 
 
+$(document).ready(function () {
+  $(".custom-select").click(function (event) {
+    $(".list").toggleClass("active");
+    if($(".list1").hasClass('active')){
+         $(".list1").removeClass("active");
+    }
+  });
+});
+$(document).ready(function () {
+  $(".sub-header").click(function (event) {
+    $(".list").removeClass("active");
+  });
+});
+$(document).ready(function () {
+  $(".slider").click(function (event) {
+    $(".list").removeClass("active");
+  });
+});
+$(document).ready(function () {
+  $(".custom-select1").click(function (event) {
+    $(".list1").toggleClass("active");
+    if($(".list").hasClass('active')){
+         $(".list").removeClass("active");
+    }
+  });
+});
+$(document).ready(function () {
+  $(".sub-header").click(function (event) {
+    $(".list1").removeClass("active");
+  });
+});
+$(document).ready(function () {
+  $(".slider").click(function (event) {
+    $(".list1").removeClass("active");
+  });
+});
+$(document).ready(function () {
+$('#radio2').on('change', function() {
+  if($('#radio2:checked')){
+    const element = $(".custom");
+    element.text("Russian"); 
+  }
+});
+});
+
+$(document).ready(function () {
+$('#radio1').on('change', function() {
+
+  if($('#radio1:checked')){
+    const element = $(".custom");
+    element.text("English"); 
+  }
+});
+});
+$(document).ready(function () {
+$('#radio3').on('change', function() {
+   if($('#radio3:checked')){
+    const element = $(".custom");
+    element.text("Italian"); 
+  }
+});
+});
+
+
+
+$(document).ready(function () {
+$('#radio5').on('change', function() {
+  if($('#radio5:checked')){
+    const element = $(".custom1");
+    element.text("EURO"); 
+  }
+});
+});
+
+$(document).ready(function () {
+$('#radio4').on('change', function() {
+
+  if($('#radio4:checked')){
+    const element = $(".custom1");
+    element.text("USD"); 
+  }
+});
+});
+$(document).ready(function () {
+$('#radio6').on('change', function() {
+   if($('#radio6:checked')){
+    const element = $(".custom1");
+    element.text("RUB"); 
+  }
+});
+});
