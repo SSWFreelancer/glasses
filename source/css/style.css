@@ -74,9 +74,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
   font-weight: 400;
 }
+
 html{
   scroll-behavior: smooth;
 }
+
 .wrapper {
   min-height: 100%;
   overflow: hidden;
@@ -94,6 +96,7 @@ html{
   width: 1400px;
   margin: 0 auto;
   padding: 0 15px;
+  position: relative;
 }
 
 .header {
@@ -142,9 +145,7 @@ html{
 .choose__list {
   cursor: pointer;
   background: transparent;
-
   width: 58px;
-  text-align: center;
   font-family: "Open Sans";
   font-size: 13px;
   line-height: 2;
@@ -155,15 +156,6 @@ html{
   outline: none;
   border-radius: 8px;
   -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-.choose__list option {
-  background-color: #bef2ff;
-  font-size: 13px;
-  border-color: white;
-}
-.choose__list:hover {
-  background-color: #00A6CA;
 }
 
 .name {
@@ -172,7 +164,6 @@ html{
   line-height: 1.2;
   font-weight: 400;
   color: #bef2ff;
-  margin-right: 4px;
 }
 
 .currency {
@@ -241,10 +232,13 @@ html{
 .header__burger {
   display: none;
 }
-  body.lock, html.lock {
+body.lock,html.lock {
     overflow: hidden;
   }
+
 @media (max-width: 767.98px) {
+  
+
   .header__burger {
     position: relative;
     display: -ms-grid;
@@ -1828,3 +1822,174 @@ h2:last-child:after {
 .popup-fixed {
   position: fixed;
 }
+
+
+
+
+.list, .list1 {
+  top: 40px;
+  position: absolute;
+  left: 0px;
+  border-radius: 4px; 
+  padding: 12px 15px; 
+  z-index: 7;
+  display: none;
+  background: rgba(0, 0, 0, 0.8); 
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 2px 2px;
+  min-width: 130px;
+  max-height: 270px;
+  overlow: auto;
+  transition: all 0.3s ease 0s;
+}
+
+.list.active, .list1.active{
+  display: block;
+}
+.list__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-title {
+  position: relative;
+    font-size: 18px;
+    line-height: 140%;
+    font-style: normal;
+    font-weight: normal;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.hr{
+  position: absolute;
+  top: 30px;
+  color: #5d5d5d;
+  width: 100%;
+  height: 1px;
+  background-color: #5d5d5d;
+
+}
+.list-secondrow {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease 0s;
+  text-align: left;
+}
+.list-secondrow label{
+  position: relative;
+  display: flex;
+  color: #fff;
+  font-size: 16px;
+  align-items: center;
+  white-space: nowrap;
+}
+.list-secondrow input{
+  display: none;
+}
+.list-secondrow input:checked + label span::after{
+    transform: scale(1);
+}
+.list-secondrow input:checked + label{
+    font-weight: 600;
+    font-size: 15px;
+    transform: scale(1, 1.06);
+}
+.list-secondrow label span{
+  display: block;
+  position: relative;
+  align-self: center;
+  width: 12px;
+  height: 12px;
+  top: 0px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+
+}
+.list-secondrow label span::after{
+  content: '';  
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  z-index: 2;
+  top: 1px;
+  left: 1px;
+  background-color: #29B6AF;
+  transform: scale(0);
+}
+
+.checkbox-second{
+    margin-bottom: 16px;
+}
+.checkbox-first{
+    margin-bottom: 16px;
+}
+.list-btn {
+  width: 82.5px;
+  height: 21px;
+  background-color: transparent;
+  border: 1px solid #9B9B9B;
+  border-radius: 100px;
+  color: #9B9B9B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.custom-select, .custom-select1{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 12px;
+  position: relative;
+  width: 73px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: transparent;
+  cursor: pointer;
+   transition: all 0.3s ease 0s;
+}
+@media(max-width: 400px){
+  .custom-select, .custom-select1{
+    height: 25px;
+  }
+}
+.custom-select1{
+  width: 67px;
+  text-align: center;
+}
+.custom-select1 p {
+  margin-left: -16px;
+}
+.custom-select:hover, .custom-select1:hover{
+ background-color: #00A6CA;
+}
+.custom-select span, .custom-select1 span{
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 100%;
+  right: 0;
+}
+.custom-select span:after, .custom-select1 span:after{
+  content: '';
+  position: absolute;
+  width: 7px;
+  height: 1px;
+  background-color: #fff;
+  right: 6.20px;
+  transform: rotate(-45deg);
+}
+.custom-select span:before, .custom-select1 span:before{
+  content: '';
+  position: absolute;
+  width: 7px;
+  height: 1px;
+   right: 10.7px;
+  background-color: #fff;
+  transform: rotate(45deg);
+}
+
